@@ -42,9 +42,7 @@ public class StartController {
 
 	public Stack<Card> getDiscovered() {
 		
-		Stack<Card> discovered = new Stack<Card>();
-		
-		return discovered;
+		return new Stack<Card>();
 	}
 	
 
