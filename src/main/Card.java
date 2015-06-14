@@ -30,4 +30,6 @@ public class Card {
 		return card.suit == suit && card.number == number;
 		
 	}
+
+	
 }

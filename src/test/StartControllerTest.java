@@ -39,5 +39,14 @@ public class StartControllerTest {
 			assertFalse(card.turnOn());
 		}
 	}
+	
+	@Test
+	public void getSuitsTest(){
+		ArrayList<Stack<Card>> suits = startController.getSuits();
+		assertEquals(4, suits.size());
+		for(Stack<Card> card : suits){
+			assertTrue(card.empty());
+		}
+	}
 
 }

@@ -41,6 +41,17 @@ public class StartController {
 
 
 
+	public ArrayList<Stack<Card>> getSuits() {
+		
+		ArrayList<Stack<Card>> suits = new ArrayList<Stack<Card>>();
+		
+		suits.add(new Stack<Card>());
+		suits.add(new Stack<Card>());
+		suits.add(new Stack<Card>());
+		suits.add(new Stack<Card>());
+		
+		return suits;
+	}
 
 
 }
