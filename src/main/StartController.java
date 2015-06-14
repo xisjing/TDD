@@ -30,31 +30,12 @@ public class StartController {
 		
 		Stack<Card> deck= new Stack<Card>();
 		
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-		deck.push(new Card(0,5,false));
-			
+		for(int i = 0; i<24 ; i++){
+			Card card;
+			Random random = new Random();
+			card = new Card(random.nextInt(3), random.nextInt(12), false);
+			deck.push(card);
+		}
 		return deck;
 	}
 

@@ -32,9 +32,7 @@ public class StartControllerTest {
 	
 	@Test
 	public void getDeckTest(){
-		
 		Stack<Card> deck = startController.getDeck();
-		
 		assertEquals(24, deck.size());
 		for(Card card: deck){
 			assertNotNull(card);
