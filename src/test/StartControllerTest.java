@@ -41,6 +41,12 @@ public class StartControllerTest {
 	}
 	
 	@Test
+	public void getDiscoveredTest(){
+		Stack<Card> discovered = startController.getDiscovered();
+		assertTrue(discovered.empty());
+	}
+	
+	@Test
 	public void getSuitsTest(){
 		ArrayList<Stack<Card>> suits = startController.getSuits();
 		assertEquals(4, suits.size());
@@ -48,5 +54,7 @@ public class StartControllerTest {
 			assertTrue(card.empty());
 		}
 	}
+	
+	
 
 }

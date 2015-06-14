@@ -38,20 +38,31 @@ public class StartController {
 		}
 		return deck;
 	}
+	
 
-
+	public Stack<Card> getDiscovered() {
+		
+		Stack<Card> discovered = new Stack<Card>();
+		
+		return discovered;
+	}
+	
 
 	public ArrayList<Stack<Card>> getSuits() {
 		
 		ArrayList<Stack<Card>> suits = new ArrayList<Stack<Card>>();
 		
-		suits.add(new Stack<Card>());
-		suits.add(new Stack<Card>());
-		suits.add(new Stack<Card>());
-		suits.add(new Stack<Card>());
+		for(int i=0;i<4;i++){
+			
+			suits.add(new Stack<Card>());
+		}
 		
 		return suits;
 	}
+
+
+
+	
 
 
 }
