@@ -18,10 +18,11 @@ public class Card {
 		return turnOn;
 	}
 
-
-	public void overTurn() {
+	public void turnOver() {
 		this.turnOn = !this.turnOn;
+		
 	}
+	
 	
 	@Override
 	public boolean equals(Object object){
@@ -30,6 +31,8 @@ public class Card {
 		return card.suit == suit && card.number == number;
 		
 	}
+
+	
 
 	
 }
