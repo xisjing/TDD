@@ -2,6 +2,9 @@ package main;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Stack;
+
+
 
 import main.Card;
 
@@ -20,5 +23,43 @@ public class StartController {
 	
 		return peekTableaus;
 	}
+
+
+
+	public Stack<Card> getDeck() {
+		
+		Stack<Card> deck= new Stack<Card>();
+		
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+		deck.push(new Card(0,5,false));
+			
+		return deck;
+	}
+
+
+
+
 
 }

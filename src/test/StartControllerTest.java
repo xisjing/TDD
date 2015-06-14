@@ -3,6 +3,7 @@ package test;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 import main.Card;
 import main.StartController;
@@ -27,6 +28,18 @@ public class StartControllerTest {
 			assertTrue(card.turnOn());
 		}
 			
+	}
+	
+	@Test
+	public void getDeckTest(){
+		
+		Stack<Card> deck = startController.getDeck();
+		
+		assertEquals(24, deck.size());
+		for(Card card: deck){
+			assertNotNull(card);
+			assertFalse(card.turnOn());
+		}
 	}
 
 }
